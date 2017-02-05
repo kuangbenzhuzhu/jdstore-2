@@ -17,3 +17,38 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+.container{
+  padding: 80px 120px;
+}
+
+.person{// 第二部分的图片格式
+  border: 10px solid transparent; //图片边框设为10px,默认边框为透明。
+  margin-bottom: 25px;
+  width: 80%;
+  height: 80%;
+  opacity:0.7;  //不透明度，1为全透明。
+}
+
+.person:hover{
+  border-color: #f1f1f1;  //当鼠标放在图片上的时候，图片border显示浅灰色
+}
+
+//-------------------------   carousel  ---------------------------
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;  //carousel图片上的字体颜色为白色
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+//-------------------------   carousel  ---------------------------
