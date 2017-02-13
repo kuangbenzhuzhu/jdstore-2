@@ -1,3 +1,51 @@
+<div class="w1200 clearfix bc mt50 pb20">
+  <div class="logo fl"><%=link_to("小小食杂铺", products_path, class: "col-red")%></div>
+
+</div>
+<%= render :partial => "products/menu" %>
+<div class="index-main bg-gray">
+  <div class="banner tc pt30">
+    <img src="https://ww3.sinaimg.cn/large/006tKfTcgy1fco41sv9vij30xc0a0tdt.jpg">
+  </div>
+  <div class="order clearfix mt30 w1200 bc">
+    <p class="fl title pl20 pr20">商品排序：</p>
+    <ul class="fl orderList">
+      <li class="fl orderList-orderItem pl20 pr20 col-red"><%= link_to("人气", products_path(:order => "by_product_like")) %></li>
+      <li class="fl orderList-orderItem pl20 pr20"><%= link_to("销量", products_path(:order => "by_product_quantity")) %></li>
+      <li class="fl orderList-orderItem pl20 pr20"><%= link_to("新品", products_path ) %></li>
+      <li class="fl orderList-orderItem pl20 pr20"><%= link_to("价格", products_path(:order => "by_product_price")) %></li>
+    </ul>
+  </div>
+
+  <div class="productList-wrap mt30 bc">
+    <ul class="productList clearfix pl10 pr10 pb20">
+       <% @products.each_with_index do |product, index| %>
+        <% if index > 0 && (index + 1) % 5 == 0 %>
+          <li class="fl productList-item productList-lastItem p15">
+        <% else %>
+          <li class="fl productList-item p15">
+        <% end %>
+            <p class="productList-item-pic w200 h200">
+              <%= link_to product_path(product) do %>
+                <% if product.image.present? %>
+                  <%= image_tag(product.image.thumb.url) %>
+                <% else %>
+                  <%= image_tag("http://placehold.it/200x200&text=No Pic") %>
+                <% end %>
+              <% end %>
+          </p>
+          <p class="productList-item-price fb col-red f18 mt10">￥<%= product.price %></p>
+
+          <p class="productList-item-desc mt5 f12"><%= product.description %></p>
+
+        </li>
+
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+
 <div class="row">
   <% @products.each do |product| %>
     <div class="col-xs-6 col-md-3" >

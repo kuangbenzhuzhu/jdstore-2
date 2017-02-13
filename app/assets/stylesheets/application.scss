@@ -18,51 +18,62 @@
 @import "bootstrap";
 @import "font-awesome";
 
-.container{
-  padding: 80px 120px;
+.navbar{
+  //background-color: #0b57ac;
+  //color: #ffffff;
 }
 
-.person{// 第二部分的图片格式
-  border: 10px solid transparent; //图片边框设为10px,默认边框为透明。
-  margin-bottom: 25px;
-  width: 80%;
-  height: 80%;
-  opacity:0.7;  //不透明度，1为全透明。
+.jumbotron {
+  background-image:url('https://ww4.sinaimg.cn/large/006tNbRwgy1fco2dse87dj31kw11jqv5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 110px;
 }
 
-.person:hover{
-  border-color: #f1f1f1;  //当鼠标放在图片上的时候，图片border显示浅灰色
-}
-
-//-------------------------   carousel  ---------------------------
-.carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-}
-
-.carousel-caption h3 {
-    color: #fff !important;  //carousel图片上的字体颜色为白色
-}
-
-@media (max-width: 600px) {
-    .carousel-caption {
-        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-}
-//-------------------------   carousel  ---------------------------
-
-//-------------------- Container (Tour section) -------------------
-.bg-1{
-  background: #2d2d30;
-  color: #bdbdbd;
-}
-
-.bg-1 h3 {
+/*menu*/
+.menu-wrap {
+  background: #333333;
+  height: 42px;
+  line-height: 42px;
   color: #fff;
 }
+.menuList-item {
+  a {
+    color: #FFF;
+  }
+  padding: 0 22px;
+  cursor: pointer;
+}
+.menuList-item:hover {
+  background-color: #434343;
+}
+.menuList-activeItem {
+  background: #D32048;
+}
+.menuList-activeItem:hover {
+  background: #D32048;
+}
 
-.bg-1 p {
-  font-style: italic;
+/*商品列表*/
+.productList-wrap {
+  width: 1220px;
+}
+.productList {
+  margin-bottom: 0;
+}
+.productList-item {
+  width: 230px;
+  height: 350px;
+  background: #fff;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+.productList-lastItem {
+  margin-right: 0;
+}
+.productList-item-name {
+  color: #333;
+}
+.productList-item-desc {
+  color: #808080;
 }
