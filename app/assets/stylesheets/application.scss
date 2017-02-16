@@ -82,6 +82,27 @@
   border-radius: 0;//圆角为0
 }
 
+//--------------------------------- 修改 contact 样式 ------------------------
+.contact{
+  padding: 80px 80px;
+}
+
+.left p{
+  text-align: left;
+  padding: 0 0 0 150px;
+  font-size: 18px;
+}
+
+.right p{
+  text-align: left;
+  padding: 0 100px 0 150px;
+  font-size: 18px;
+}
+
+.contact h3{
+  padding-bottom: 30px;
+}
+
 //--------------------------------- 修改 footer 样式 ------------------------
 
 footer {

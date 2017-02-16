@@ -8,21 +8,18 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active">
+        <li >
           <%= link_to("首页", root_path)%>
         </li>
-        <li class="active">
-          <%= link_to("PPT模板", products_path)%>
-        </li>
-        <li class="active">
-          <%= link_to("课程", "#")%>
+        <li >
+          <%= link_to("商品", products_path)%>
         </li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
           <%= link_to carts_path do %>
-            购物车 <i class="fa fa-shopping-cart"></i> 共 (<%= current_cart.products.count%>)件商品
+            购物车 <i class="fa fa-shopping-cart"></i>(<%= current_cart.products.count%>)
           <% end %>
         </li>
         <% if !current_user %>
