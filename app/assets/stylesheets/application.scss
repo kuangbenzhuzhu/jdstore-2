@@ -18,62 +18,9 @@
 @import "bootstrap";
 @import "font-awesome";
 
-.navbar{
-  //background-color: #0b57ac;
-  //color: #ffffff;
-}
-
-.jumbotron {
-  background-image:url('https://ww4.sinaimg.cn/large/006tNbRwgy1fco2dse87dj31kw11jqv5.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 110px;
-}
-
-/*menu*/
-.menu-wrap {
-  background: #333333;
-  height: 42px;
-  line-height: 42px;
-  color: #fff;
-}
-.menuList-item {
-  a {
-    color: #FFF;
-  }
-  padding: 0 22px;
-  cursor: pointer;
-}
-.menuList-item:hover {
-  background-color: #434343;
-}
-.menuList-activeItem {
-  background: #D32048;
-}
-.menuList-activeItem:hover {
-  background: #D32048;
-}
-
-/*商品列表*/
-.productList-wrap {
-  width: 1220px;
-}
-.productList {
-  margin-bottom: 0;
-}
-.productList-item {
-  width: 230px;
-  height: 350px;
-  background: #fff;
-  margin-right: 12px;
-  margin-bottom: 12px;
-}
-.productList-lastItem {
-  margin-right: 0;
-}
-.productList-item-name {
-  color: #333;
-}
-.productList-item-desc {
-  color: #808080;
+.navbar-brand > img {
+    display: inline-block;	//图片和链接文字显示在同一行
+    margin-right: 10px; //图片和链接文字拉开一点距离
+    width: 32px; //定制图片宽度
+    height: 32px; //定制图片高度
 }
