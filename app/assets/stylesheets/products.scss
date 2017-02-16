@@ -1,3 +1,32 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.productsList .row{
+  padding: 50px 100px 20px ;
+}
+
+.productsList .more{
+    font-size: 14px;
+    position: relative;
+    padding-right: 20px;
+    text-align: right;
+    width: 90%;
+    max-width: 1024px;
+    margin: -38px -38px 1em;
+}
+
+h2 {
+    font-size: 18px;
+    //margin: 0 auto 1em;
+    line-height: 1;
+    color: #333;
+    width: 90%;
+    max-width: 1024px;
+}
+p {
+  text-align: center;
+  color: #333333;
+}
