@@ -41,17 +41,89 @@
 
 <!-- 以上为carousel -->
 
-<div class="container contact">
-  <h3 class="text-center">联系我们</h3>
+<div class="container welcome-index service">
+
+  <h2>专业服务</h2>
+  <hr>
+
+  <br>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="https://ww3.sinaimg.cn/large/006tNbRwgy1fcuzb3yj6nj31kw0vve83.jpg" alt="定制">
+          <p class="thumbnail-title">PPT定制</p>
+          <p class="thumbnail-text">提供专业的PPT定制和美化服务</p>
+          <button class="btn"><a href="#">立即定制</a></button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="https://ww1.sinaimg.cn/large/006tNbRwgy1fcuz8hb053j30zk0k0jtw.jpg" alt="定制">
+          <p class="thumbnail-title">PPT模板</p>
+          <p class="thumbnail-text">多种行业风格PPT模板可供选购</p>
+          <button class="btn"><a href="#">立即购买</a></button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="https://ww4.sinaimg.cn/large/006tNbRwgy1fcuzcxn21cj318g0og7n5.jpg" alt="定制">
+          <p class="thumbnail-title">PPT课程</p>
+          <p class="thumbnail-text">轻松学习PPT课程大家一起成长</p>
+          <button class="btn"><a href="#">立即加入</a></button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="container welcome-index team" >
+
+    <h2>设计团队</h2>
+    <hr>
+
+
+  <br>
+  <div class=" team-members">
+    <div class="row">
+      <div class="col-md-4 ">
+        <div class="thumbnail team-member">
+          <img src="<%= image_url 'ehong.jpg'%>" class="img-circle" alt="一宏" style="width: 150px; height:150px;">
+          <p class="name">一宏</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail team-member">
+          <img src="<%= image_url 'grid.jpg'%>" class="img-circle" alt="Grid" style="width: 150px; height:150px;">
+          <p class="name">Grid</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail team-member">
+          <img src="<%= image_url 'zhijiansha.jpg'%>" class="img-circle" alt="指间沙" style="width: 150px; height:150px;">
+          <p class="name">指间沙</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container welcome-index contact">
+
+    <h2>联系我们</h2>
+    <hr>
+    <br>
 
   <div class="row">
     <div class="col-md-6 left">
       <p><i class="fa fa-weixin" aria-hidden="true"></i> 公众号：一宏老师说</p>
+      <br>
       <p><img src='<%= image_url 'weibo.png' %>' > 一宏Waffle </p>
 
     </div>
     <div class="col-md-6 right">
       <p><i class="fa fa-briefcase" aria-hidden="true"></i> 图狮科技有限公司</p>
+      <br>
       <p><span class="glyphicon glyphicon-map-marker"></span> 江苏省常州市</p>
     </div>
   </div>

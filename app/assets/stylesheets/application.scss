@@ -31,6 +31,7 @@
     background-color: #333333;//背景颜色
     border-color: #333333;//边框色
     margin-bottom: 0;//底部 margin 不撑开距离
+
 }
 
 //--------------------------------- 修改导航栏 brand字体 样式 ----------------------
@@ -83,19 +84,94 @@
   border-radius: 0;//圆角为0
 }
 
+//--------------------------------- 修改 hr 样式 ------------------------
+hr{
+  border-color: #333;
+}
+
+//--------------------------------- 修改 container 样式 ------------------------
+.welcome-index{
+  padding: 40px 100px 40px;
+
+}
+.welcome-index h2{
+  text-align: left;
+  padding-top: 30px;
+}
+
+//--------------------------------- 修改 service 样式 ------------------------
+
+.thumbnail-title{
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.thumbnail{
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: none;
+}
+
+.thumbnail-text {
+  font-size: 15px;
+}
+
+.btn{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.btn:hover, .btn:focus{
+  border: 1px solid  #595959;
+  background-color:  #595959;
+  color: #ffffff;
+}
+
+.btn a{
+  color: #ffffff;
+}
+
+.btn a:hover,
+.btn a:focus {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.thumbnail img{
+  margin-bottom: 30px;
+}
+
+//--------------------------------- 修改 team 样式 ------------------------
+.bg-grey{
+  background-color: #f6f6f6;
+}
+
+.container-fluid h2{
+  text-align: left;
+  padding-top: 30px;
+}
+
+.team .team-member img{
+  margin-top: 20px;
+}
+
+.name{
+  font-size: 20px;
+}
+
+
+
 //--------------------------------- 修改 contact 样式 ------------------------
-.contact{
-  padding: 60px 80px ;
-}
-
-.contact h3{
-  padding-bottom: 50px;
-}
-
 .contact .row img{
   width: 20px;
   height: 20px;
 }
+
 
 .left p{
   text-align: left;
@@ -135,7 +211,7 @@ body {
 .footer {
  position: absolute;
  bottom: 0;
- width: 100%;
+ width: 99%;
  height: 150px;
  text-align: center;
 }
