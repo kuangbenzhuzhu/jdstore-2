@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  resources :welcome do
+    
+  end
+
   root 'welcome#index'
 
   namespace :admin do
