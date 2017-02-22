@@ -12,14 +12,16 @@
     <div class="container-fluid">
       <div class="row">
         <%= render "common/navbar" %>
-      </div>
-      <%= render "common/flashes"%>
+
+        <%= render "common/flashes"%>
+
       <%= yield %>
+      </div>
     </div>
 
 
       <%= render "common/footer"%>
-    
+
 
   <script>
   var slideIndex = 1;
